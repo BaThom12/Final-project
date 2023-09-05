@@ -3,6 +3,7 @@ package com.vmo.nopcommerce.common;
 import com.vmo.nopcommerce.interfaces.HomePageUI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -20,4 +21,13 @@ public class BaseTest {
     public void tearDown(){
         driver.quit();
     }*/
+
+    protected void verifyEquals(String actual, String expect) {
+        Assert.assertEquals(actual,expect);
+    }
+    protected void verifyTrue(boolean value) {
+        Assert.assertTrue(value);
+    }
+
+
 }

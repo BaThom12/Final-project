@@ -21,7 +21,7 @@ public class HomePageObject extends BasePage {
         clickElement(driver, HomePageUI.LOCATOR_REGISTER_lABEL);
     }
 
-    public String performSearchHasResult(WebDriver driver,String keySearch) {
+    public String performSearchHasResult(WebDriver driver, String keySearch) {
         sendKeys(driver, HomePageUI.LOCATOR_SEARCH_TEXTBOX, keySearch);
         clickElement(driver, HomePageUI.LOCATOR_SEARCH_BUTTON);
         List<String> listProduct = getList(driver, HomePageUI.LOCATOR_LIST_PRODUCT);
@@ -40,15 +40,16 @@ public class HomePageObject extends BasePage {
         return result;
     }
 
-    public String performSearchNoResult(WebDriver driver,String keySearch) {
+    public String performSearchNoResult(WebDriver driver, String keySearch) {
         sendKeys(driver, HomePageUI.LOCATOR_SEARCH_TEXTBOX, keySearch);
         clickElement(driver, HomePageUI.LOCATOR_SEARCH_BUTTON);
         String result = getText(driver, HomePageUI.LOCATOR_NO_RESULT);
         return result;
     }
 
-    public String optionValue="";
-    public boolean selectSortOption(WebDriver driver,String option) throws InterruptedException {
+    public String optionValue = "";
+
+    public boolean selectSortOption(WebDriver driver, String option) throws InterruptedException {
         clickElement(driver, HomePageUI.LOCATOR_COMPUTER_MENU);
         clickElement(driver, HomePageUI.LOCATOR_SOFTWARE_MENU);
         List<String> lstBeforeOrder = getList(driver, HomePageUI.LOCATOR_LIST_PRODUCT);
@@ -60,11 +61,16 @@ public class HomePageObject extends BasePage {
         List<String> lstAfterOrder = getList(driver, HomePageUI.LOCATOR_LIST_PRODUCT);
         Boolean orderTrue = false;
         for (int i = 0; i < lstBeforeOrder.size(); i++) {
-                if (lstBeforeOrder.get(i).toString().equals(lstAfterOrder.get(i).toString())) {
-                    orderTrue = true;
-                }
+            if (lstBeforeOrder.get(i).toString().equals(lstAfterOrder.get(i).toString())) {
+                orderTrue = true;
+            }
         }
         return orderTrue;
+    }
+
+
+    public String getUrlHomePage(WebDriver driver){
+        return getUrl(driver);
     }
 
 

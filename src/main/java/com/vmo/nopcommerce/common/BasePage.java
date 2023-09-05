@@ -55,6 +55,12 @@ public class BasePage {
     public String getText(WebDriver driver, String locator){
         return driver.findElement(By.xpath(locator)).getText();
     }
+    protected String getUrl(WebDriver driver){
+        return driver.getCurrentUrl();
+    }
+    protected String getTitle(WebDriver driver){
+        return driver.getTitle();
+    }
 
 
 

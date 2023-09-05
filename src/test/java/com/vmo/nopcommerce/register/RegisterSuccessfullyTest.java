@@ -28,10 +28,10 @@ public class RegisterSuccessfullyTest extends BaseTest {
     @Test
     public void Register_TC01_RegisterSuccessfully() {
         home = new HomePageObject(driver);
-        Assert.assertEquals(this.driver.getCurrentUrl(), HomePageUI.HOME_URL);
+        verifyEquals(home.getUrlHomePage(driver),HomePageUI.HOME_URL);
         home.clickToMenu(driver);
         register = new RegisterPageObject(driver);
-        Assert.assertTrue(driver.getCurrentUrl().contains(RegisterPageUI.REGISTER_URL));
+        verifyTrue(driver.getCurrentUrl().contains(RegisterPageUI.REGISTER_URL));
         register.chooseGender(driver);
         register.enterFirstName(driver);
         register.enterLastName(driver);
@@ -43,7 +43,7 @@ public class RegisterSuccessfullyTest extends BaseTest {
         register.enterPassword(driver);
         register.enterConfirmPassword(driver);
         register.clickRegisterButton(driver);
-        Assert.assertEquals(register.getTextOfNofify(), "Your registration completed");
+        verifyEquals(register.getTextOfNofify(), "Your registration completed");
     }
 
     @AfterMethod

@@ -1,5 +1,6 @@
 package com.vmo.nopcommerce.login;
 
+import com.vmo.nopcommerce.common.BaseTest;
 import com.vmo.nopcommerce.interfaces.HomePageUI;
 import com.vmo.nopcommerce.interfaces.LoginPageUI;
 import com.vmo.nopcommerce.pageobject.HomePageObject;
@@ -12,7 +13,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ForgetPasswordTest {
+import java.awt.*;
+
+public class ForgetPasswordTest extends BaseTest {
     private static WebDriver driver;
     private HomePageObject home;
     private LoginPageObject login;
@@ -25,18 +28,18 @@ public class ForgetPasswordTest {
     }
 
     @Test
-    public void Password_TC04_Forgot() {
+    public void Password_TC04_Forgot()throws AWTException {
         home = new HomePageObject(driver);
-        Assert.assertEquals(this.driver.getCurrentUrl(), HomePageUI.HOME_URL);
+        verifyEquals(home.getUrlHomePage(driver),HomePageUI.HOME_URL);
         login = new LoginPageObject(driver);
         login.clickOnLogin(driver);
-        Assert.assertEquals(this.driver.getTitle(), LoginPageUI.LOGIN_TITLE);
+        verifyEquals(login.getTitlePage(driver), LoginPageUI.LOGIN_TITLE);
         login.clickOnForgetPassword(driver);
-        Assert.assertEquals(this.driver.getTitle(), LoginPageUI.PASSWORD_RECOVER_TITLE);
+        verifyEquals(login.getTitlePage(driver), LoginPageUI.PASSWORD_RECOVER_TITLE);
         login.enterEmail(driver);
         login.clickOnRecoverButton(driver);
-        Assert.assertEquals(login.getNofifySuccess(driver), LoginPageUI.FORGOT_TITLE);
-        login.verifyGmail(driver);
+        verifyEquals(login.getNofifySuccess(driver), LoginPageUI.FORGOT_TITLE);
+        login.loginGmail(driver);
 
     }
 
