@@ -32,15 +32,19 @@ public class ForgetPasswordTest extends BaseTest {
         home = new HomePageObject(driver);
         verifyEquals(home.getUrlHomePage(driver),HomePageUI.HOME_URL);
         login = new LoginPageObject(driver);
-        login.clickOnLogin(driver);
+        login.clickOnButton(driver,HomePageUI.LOCATOR_LOGIN_lABEL);
         verifyEquals(login.getTitlePage(driver), LoginPageUI.LOGIN_TITLE);
-        login.clickOnForgetPassword(driver);
+        login.clickOnButton(driver,LoginPageUI.LOCATOR_FORGOT_PASSWORD_lABEL);
         verifyEquals(login.getTitlePage(driver), LoginPageUI.PASSWORD_RECOVER_TITLE);
-        login.enterEmail(driver);
-        login.clickOnRecoverButton(driver);
-        verifyEquals(login.getNofifySuccess(driver), LoginPageUI.FORGOT_TITLE);
-        login.loginGmail(driver);
-
+        login.enterValueOnTextbox(driver,LoginPageUI.LOCATOR_EMAIL_TEXTBOX,"thombt@vmogroup.com");
+        login.clickOnButton(driver,LoginPageUI.LOCATOR_RECOVER_BUTTON);
+        verifyEquals(login.getNofifySuccess(driver,LoginPageUI.LOCATOR_NOFICATION_TITLE), LoginPageUI.FORGOT_TITLE);
+        //login.loginGmail(driver);
+        login.openGmailPage(driver,0,LoginPageUI.GMAIL_URL);
+        login.enterValueOnTextbox(driver,LoginPageUI.LOCATOR_EMAIL_ID_TEXTBOX,"thombt@vmogroup.com");
+        login.clickOnButton(driver, LoginPageUI.LOCATOR_NEXT_BUTTON);
+        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_PASSWORD_TEXTBOX, "password");
+        login.clickOnButton(driver, LoginPageUI.LOCATOR_PASSWORD_NEXT_BUTTON);
     }
 
     @AfterMethod
