@@ -15,11 +15,11 @@ public class RegisterPageObject extends BasePage {
         clickToElement(driver, locator);
     }
 
-    public void enterValueOnTextBoxOfRegisterPage(WebDriver driver,String locator,String value) {
-        sendKeyToElement(driver, locator, value);
+    public void enterValueOnTextBoxOfRegisterPage(WebDriver driver,String locator,String textDynamic,String value) {
+        sendKeyToElement(driver, getDynamiLocator(locator,textDynamic), value);
     }
-    public void chooseValueOfSelectOfRegisterPage(WebDriver driver,String locator,String value) {
-        selectItemInDefaultDropdownByText(driver,locator,value);
+    public void chooseValueOfSelectOfRegisterPage(WebDriver driver,String locator,String textDynamic,String value) {
+        selectItemInDefaultDropdownByText(driver,getDynamiLocator(locator,textDynamic),value);
     }
 
     public String getTextOfNofify(WebDriver driver,String locator) {
