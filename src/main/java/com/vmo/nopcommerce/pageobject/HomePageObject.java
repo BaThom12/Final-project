@@ -78,7 +78,6 @@ public class HomePageObject extends BasePage {
                 isTitleCommentDisplayed = true;
             }
         }
-        System.out.println();
         boolean isContentCommentDisplayed = false;
         List<String> lstContentComment = getListTextElements(driver, locatorContentComment);
         for (int i = 0; i < lstContentComment.size(); i++) {

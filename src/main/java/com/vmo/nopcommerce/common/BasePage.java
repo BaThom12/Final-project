@@ -81,13 +81,10 @@ public class BasePage {
         List<WebElement> listElement = getListWebElements(driver, locator);
         overrideImplicitTimeOut(driver, longTimeOut);
         if (listElement.size() == 0) {
-            System.out.println("Element not in DOM");
             return true;
         } else if (!listElement.get(0).isDisplayed()) {
-            System.out.println("Element in DOM but undisplay");
             return true;
         } else {
-            System.out.println("Element in DOM and display");
             return false;
         }
     }
@@ -98,13 +95,10 @@ public class BasePage {
         List<WebElement> listElement = getListWebElements(driver, locator);
         overrideImplicitTimeOut(driver, longTimeOut);
         if (listElement.size() == 0) {
-            System.out.println("Element not in DOM");
             return true;
         } else if (!listElement.get(0).isDisplayed()) {
-            System.out.println("Element in DOM but undisplay");
             return true;
         } else {
-            System.out.println("Element in DOM and display");
             return false;
         }
     }
@@ -511,11 +505,6 @@ public class BasePage {
         waitForElementVisible(driver,locator,params);
         locator = getDynamiLocator(locator, params);
         jsExecutor = (JavascriptExecutor) driver;
-        //String script=" return $(document.evaluate(\"//input[@id='Address_FirstName']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue).val()";
-        //String s="$(document.evaluate("//input[@id='Address_FirstName']", document, nul"l, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue).val()
-        //String script="$(document.evaluate(""+locator+ ", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue).val()";
-        //System.out.println(s);
-        // String s="//input[@id='Address_FirstName']";
         String script = "return $(document.evaluate(" + "\"" + locator + "\"" + ", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue).val()";
 //
         return (String) jsExecutor.executeScript(script);
