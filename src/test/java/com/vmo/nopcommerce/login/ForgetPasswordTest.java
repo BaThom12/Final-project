@@ -35,12 +35,11 @@ public class ForgetPasswordTest extends BaseTest {
         verifyEquals(login.getTitlePage(driver), LoginPageUI.LOGIN_TITLE);
         login.clickOnButton(driver, LoginPageUI.LOCATOR_FORGOT_PASSWORD_lABEL);
         verifyEquals(login.getTitlePage(driver), LoginPageUI.PASSWORD_RECOVER_TITLE);
-        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_EMAIL_TEXTBOX, "thombt@vmogroup.com");
+        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_EMAIL_TEXTBOX, "thombt@rikkei.com");
         login.clickOnButton(driver, LoginPageUI.LOCATOR_RECOVER_BUTTON);
         verifyEquals(login.getNofifySuccess(driver, LoginPageUI.LOCATOR_NOFICATION_TITLE), LoginPageUI.FORGOT_TITLE);
-        //login.loginGmail(driver);
         login.openGmailPage(driver, 0, LoginPageUI.GMAIL_URL);
-        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_EMAIL_ID_TEXTBOX, "thombt@vmogroup.com");
+        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_EMAIL_ID_TEXTBOX, "thombt@rikkei.com");
         login.clickOnButton(driver, LoginPageUI.LOCATOR_NEXT_BUTTON);
        // login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_PASSWORD_TEXTBOX, "password");
        // login.clickOnButton(driver, LoginPageUI.LOCATOR_PASSWORD_NEXT_BUTTON);

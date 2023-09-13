@@ -12,7 +12,6 @@ public class FireFoxHeadlessDriverManager implements BrowserFactory{
         FirefoxOptions options = new FirefoxOptions();
         options.setBinary(firefoxBinary);
         options.setHeadless(true);  // <-- headless set here
-        WebDriver driver = new FirefoxDriver(options);
-        return driver;
+        return new FirefoxDriver(options);
     }
 }

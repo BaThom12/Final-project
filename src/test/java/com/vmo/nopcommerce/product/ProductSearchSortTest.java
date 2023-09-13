@@ -7,9 +7,7 @@ import com.vmo.nopcommerce.pageobject.RegisterPageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -18,13 +16,16 @@ public class ProductSearchSortTest extends BaseTest {
     private HomePageObject home;
     private RegisterPageObject register;
 
+    @Parameters("browser")
     @BeforeMethod
-    public void setup() {
-        driver = new ChromeDriver();
+    public void setup(@Optional("CHROME") String browser) {
+       driver = getDriverBrowser(browser);
+   // public void setup() {
+    //    driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(HomePageUI.HOME_URL);
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+       // driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Test
@@ -86,6 +87,6 @@ public class ProductSearchSortTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        cleanBrowserAndDriver();
     }
 }

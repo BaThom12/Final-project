@@ -1,11 +1,9 @@
 package com.vmo.nopcommerce.factoryEnviroment;
 
-import com.vmo.nopcommerce.factoryBrowser.BrowserNotSupportedException;
-import com.vmo.nopcommerce.factoryBrowser.ChromeDriverManager;
-import com.vmo.nopcommerce.factoryBrowser.EdgeDriverManager;
-import com.vmo.nopcommerce.factoryBrowser.FireFoxDriverManager;
+import com.vmo.nopcommerce.factoryBrowser.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class LocalFactory {
     private WebDriver driver;
@@ -14,13 +12,19 @@ public class LocalFactory {
         browser = browser.toUpperCase();
         switch (browser) {
             case "CHROME":
-                driver = new ChromeDriverManager().getBrowserDriver();
+                driver = new ChromeHeadlessDriverManager().getBrowserDriver();
                 break;
             case "FIREFOX":
-                driver = new FireFoxDriverManager().getBrowserDriver();
+                driver = new FireFoxHeadlessDriverManager().getBrowserDriver();
                 break;
             case "EDGE":
                 driver = new EdgeDriverManager().getBrowserDriver();
+                break;
+            case "INTERNET_EXPLORER":
+                driver = new InternetExplorerDriverManager().getBrowserDriver();
+                break;
+            case "SAFARI":
+                driver = new SafariDriverManager().getBrowserDriver();
                 break;
             default:
                 throw new BrowserNotSupportedException(browser);

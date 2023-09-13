@@ -11,6 +11,7 @@ public class ChromeHeadlessDriverManager implements BrowserFactory{
     public WebDriver getBrowserDriver() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
+        options.addArguments("--window-size=1200,600");
         return new ChromeDriver(options);
     }
 }

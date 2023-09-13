@@ -30,7 +30,7 @@ public class HomePageUI {
     public static final String FORM_FB = "//form[@id='login_popup_cta_form']";
 
     public static String LOCATOR_NO_RESULT ="//div[@class='no-result']";
-    public static final String LOCATOR_COMPUTER_MENU = "(//div[@class='header-menu']//a)[1]";
+    public static final String LOCATOR_COMPUTER_MENU = "//div[@class='header-menu']/ul[@class='top-menu notmobile']//a[@href='/computers']";
     public static final String LOCATOR_SOFTWARE_MENU = "(//ul[@class='sublist']//li//a)[3]";
     public static final String LOCATOR_SOFTWARE_TITLE = "//div[@class='page-title']/h1";
     public static final String LOCATOR_SELECT_PRODUCT_SORT_ORDER = "//select[@id='products-orderby']";
