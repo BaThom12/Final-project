@@ -19,13 +19,9 @@ public class ProductSearchSortTest extends BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setup(@Optional("CHROME") String browser) {
-       driver = getDriverBrowser(browser);
-   // public void setup() {
-    //    driver = new ChromeDriver();
+        driver = getDriverBrowser(browser);
         driver.manage().window().maximize();
         driver.get(HomePageUI.HOME_URL);
-       // driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Test
@@ -63,21 +59,22 @@ public class ProductSearchSortTest extends BaseTest {
         home.sendKeyToElementOnHomePage(driver, HomePageUI.LOCATOR_CONTENT_COMMENT, HomePageUI.CONTENT_COMMENT);
         home.clickToElementOnHomePage(driver, HomePageUI.LOCATOR_ADD_COMMENT_BUTTON);
         verifyEquals(home.getTextElementOfHomePage(driver, HomePageUI.LOCATOR_MESSAGE_ADD_COMMENT_SUCCESS), HomePageUI.MESSAGE_ADD_COMMENT_SUCCESS);
-        verifyTrue(home.isCommentAdded(driver,HomePageUI.LOCATOR_DETAIL_TITLE_COMMENT,HomePageUI.TITLE_COMMENT,HomePageUI.LOCATOR_DETAIL_CONTENT_COMMENT,HomePageUI.CONTENT_COMMENT));
+        verifyTrue(home.isCommentAdded(driver, HomePageUI.LOCATOR_DETAIL_TITLE_COMMENT, HomePageUI.TITLE_COMMENT, HomePageUI.LOCATOR_DETAIL_CONTENT_COMMENT, HomePageUI.CONTENT_COMMENT));
     }
+
     @Test
-    public void Product_TC06_ChangeExchange(){
+    public void Product_TC06_ChangeExchange() {
         verifyOnHome();
-        home.selectExchange(driver,HomePageUI.LOCATOR_EXCHANGE,"Euro");
-        verifyEquals(home.getOptionOfSelect(driver,HomePageUI.LOCATOR_EXCHANGE),"Euro");
-        verifyTrue(home.isExchangeDisplayed(driver,HomePageUI.EXCHANGE,"Euro"));
+        home.selectExchange(driver, HomePageUI.LOCATOR_EXCHANGE, "Euro");
+        verifyEquals(home.getOptionOfSelect(driver, HomePageUI.LOCATOR_EXCHANGE), "Euro");
+        verifyTrue(home.isExchangeDisplayed(driver, HomePageUI.EXCHANGE, "Euro"));
     }
 
     @Test
     public void Product_TC07_OpenSocial() {
         verifyOnHome();
-        String title = home.openSocial(driver,HomePageUI.SOCIAL, HomePageUI.FORM_FB, home.getParentId(driver));
-        verifyEquals(title,"NopCommerce | Facebook");
+        String title = home.openSocial(driver, HomePageUI.SOCIAL, HomePageUI.FORM_FB, home.getParentId(driver));
+        verifyEquals(title, "NopCommerce | Facebook");
     }
 
     public void verifyOnHome() {
