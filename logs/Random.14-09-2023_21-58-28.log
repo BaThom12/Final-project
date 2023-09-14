@@ -1,0 +1,7 @@
+[14-09-2023 21:58:29.631 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[14-09-2023 21:58:31.154 INFO com.vmo.nopcommerce.helper.Log] - Open Home of Nopcommer
+[14-09-2023 21:58:31.168 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[14-09-2023 21:58:32.225 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the login page is succeed
+[14-09-2023 21:58:32.734 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the password recovery page is succeed
+[14-09-2023 21:58:33.601 INFO com.vmo.nopcommerce.helper.Log] - Verify the message(Email with instructions has been sent to you.) is displayed
+[14-09-2023 21:59:35.823 INFO com.vmo.nopcommerce.helper.Log] - Clear Browser and driver

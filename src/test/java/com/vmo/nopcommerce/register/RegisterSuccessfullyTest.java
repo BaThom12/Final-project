@@ -1,6 +1,8 @@
 package com.vmo.nopcommerce.register;
 
 import com.vmo.nopcommerce.common.BaseTest;
+import com.vmo.nopcommerce.helper.Log;
+import com.vmo.nopcommerce.helper.TestNGListener;
 import com.vmo.nopcommerce.interfaces.HomePageUI;
 import com.vmo.nopcommerce.interfaces.RegisterPageUI;
 import com.vmo.nopcommerce.pageobject.HomePageObject;
@@ -10,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
+@Listeners(TestNGListener.class)
 public class RegisterSuccessfullyTest extends BaseTest {
     private static WebDriver driver;
     private HomePageObject home;
@@ -28,9 +30,11 @@ public class RegisterSuccessfullyTest extends BaseTest {
     public void Register_TC01_RegisterSuccessfully(){
         home = new HomePageObject(driver);
         verifyEquals(home.getUrlHomePage(driver),HomePageUI.HOME_URL);
+        Log.info("Verify that you are on the home page is succeed");
         home.clickToElementOnHomePage(driver,HomePageUI.LOCATOR_REGISTER_lABEL);
         register = new RegisterPageObject(driver);
         verifyTrue(driver.getCurrentUrl().contains(RegisterPageUI.REGISTER_URL));
+        Log.info("Verify that you are on the registation page is succeed");
         register.clickToElementOfRegisterPage(driver,RegisterPageUI.LOCATOR_GENDER);
         register.enterValueOnTextBoxOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_TEXTBOX, "FirstName","Thom");
         register.enterValueOnTextBoxOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_TEXTBOX, "LastName","Ba");
@@ -43,10 +47,12 @@ public class RegisterSuccessfullyTest extends BaseTest {
         register.enterValueOnTextBoxOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_TEXTBOX, "ConfirmPassword","Abc@1234");
         register.clickToElementOfRegisterPage(driver,RegisterPageUI.LOCATOR_REGISTER_BUTTON);
         verifyEquals(register.getTextOfNofify(driver,RegisterPageUI.LOCATOR_MESSAGE_REGISTER_SUCCESS), "Your registration completed");
+        Log.info("Verify message(Your registration completed) is displayed");
     }
 
     @AfterMethod
     public void tearDown(){
         cleanBrowserAndDriver();
+        Log.info("Verify clear browser and driver are succeed");
     }
 }

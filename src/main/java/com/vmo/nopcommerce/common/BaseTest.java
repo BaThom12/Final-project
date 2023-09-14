@@ -1,6 +1,7 @@
 package com.vmo.nopcommerce.common;
 
 import com.vmo.nopcommerce.factoryEnviroment.LocalFactory;
+import com.vmo.nopcommerce.helper.Log;
 import com.vmo.nopcommerce.interfaces.HomePageUI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +13,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 //luu khoi tao before suite
+
 public class BaseTest {
     private WebDriver driver;
     public WebDriver getDriver() {
@@ -75,6 +77,7 @@ public class BaseTest {
                 e.printStackTrace();
             }
         }
+
     }
 
     protected WebDriver getDriverBrowser(String browser) {

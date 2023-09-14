@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGListener">
+    <listeners>
+        <listener class-name="com.vmo.nopcommerce.helper.TestNGListener"/>
+    </listeners>
+    <test name="Nopcommerce">
+        <classes>
+            <class name="com.vmo.nopcommerce.login.ForgetPasswordTest"></class>
+            <class name="com.vmo.nopcommerce.product.ProductSearchSortTest"></class>
+            <class name="com.vmo.nopcommerce.register.RegisterSuccessfullyTest"></class>
+        </classes>
+    </test>
+</suite><!-- Test -->

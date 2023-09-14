@@ -1,0 +1,4 @@
+[14-09-2023 21:57:31.750 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[14-09-2023 21:57:32.851 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the registation page is succeed
+[14-09-2023 21:57:35.271 INFO com.vmo.nopcommerce.helper.Log] - Verify message(Your registration completed) is displayed
+[14-09-2023 21:57:35.619 INFO com.vmo.nopcommerce.helper.Log] - Verify clear browser and driver are succeed
