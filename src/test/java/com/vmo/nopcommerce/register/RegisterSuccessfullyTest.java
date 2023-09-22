@@ -7,11 +7,17 @@ import com.vmo.nopcommerce.interfaces.HomePageUI;
 import com.vmo.nopcommerce.interfaces.RegisterPageUI;
 import com.vmo.nopcommerce.pageobject.HomePageObject;
 import com.vmo.nopcommerce.pageobject.RegisterPageObject;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+@Epic("NopCommerce")
+@Feature("Register")
+@Story("RegisterSuccessful")
 @Listeners(TestNGListener.class)
 public class RegisterSuccessfullyTest extends BaseTest {
     private static WebDriver driver;

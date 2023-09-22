@@ -6,12 +6,18 @@ import com.vmo.nopcommerce.helper.TestNGListener;
 import com.vmo.nopcommerce.interfaces.HomePageUI;
 import com.vmo.nopcommerce.pageobject.HomePageObject;
 import com.vmo.nopcommerce.pageobject.RegisterPageObject;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.time.Duration;
+@Epic("NopCommerce")
+@Feature("Product")
+@Story("The operation on the product was successful")
 @Listeners(TestNGListener.class)
 public class ProductSearchSortTest extends BaseTest {
     private static WebDriver driver;

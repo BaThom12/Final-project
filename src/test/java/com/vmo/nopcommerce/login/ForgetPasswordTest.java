@@ -8,12 +8,18 @@ import com.vmo.nopcommerce.interfaces.LoginPageUI;
 import com.vmo.nopcommerce.pageobject.HomePageObject;
 import com.vmo.nopcommerce.pageobject.LoginPageObject;
 import com.vmo.nopcommerce.pageobject.RegisterPageObject;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.awt.*;
+@Epic("NopCommerce")
+@Feature("Login")
+@Story("Forget Password successful")
 @Listeners(TestNGListener.class)
 public class ForgetPasswordTest extends BaseTest {
     private static WebDriver driver;

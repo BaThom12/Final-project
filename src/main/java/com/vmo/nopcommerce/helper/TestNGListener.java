@@ -1,5 +1,10 @@
 package com.vmo.nopcommerce.helper;
 
+import com.vmo.nopcommerce.common.BaseTest;
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -16,12 +21,18 @@ public class TestNGListener implements ITestListener {
     public void onTestSuccess(ITestResult result) {
         ITestListener.super.onTestSuccess(result);
         System.out.println("--onTestSuccess");
+        Object testClass = result.getInstance();
+        WebDriver webDriver = ((BaseTest) testClass).getDriver();
+        saveScreenShot(webDriver);
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
         System.out.println("--onTestFailure");
+        Object testClass = result.getInstance();
+        WebDriver webDriver = ((BaseTest) testClass).getDriver();
+        saveScreenShot(webDriver);
     }
 
     @Override
@@ -36,9 +47,23 @@ public class TestNGListener implements ITestListener {
         System.out.println("--onStart");
     }
 
-    @Override
-    public void onFinish(ITestContext context) {
-        ITestListener.super.onFinish(context);
-        System.out.println("--onFinish");
+    //@Override
+//    public void onFinish(ITestContext context) {
+//        ITestListener.super.onFinish(context);
+//        System.out.println("--onFinish");
+//    }
+
+    @Attachment()
+    public static byte[] saveScreenShot(WebDriver driver) {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
+
+
+//    @Override
+//    public void onFinish(ITestResult result) {
+//        Log.info("---------- " + result.getName() + " FAILED test ----------");
+//        Object testClass = result.getInstance();
+//        WebDriver webDriver = ((BaseTest) testClass).getDriver();
+//        saveScreenShot(webDriver);
+//    }
 }
