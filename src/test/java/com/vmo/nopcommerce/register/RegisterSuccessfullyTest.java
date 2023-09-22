@@ -47,7 +47,7 @@ public class RegisterSuccessfullyTest extends BaseTest {
         register.chooseValueOfSelectOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_SELECT, "DateOfBirthDay","8");
         register.chooseValueOfSelectOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_SELECT, "DateOfBirthMonth","August");
         register.chooseValueOfSelectOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_SELECT, "DateOfBirthYear","1998");
-        register.enterValueOnTextBoxOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_TEXTBOX, "Email","thombt@rikkei.com");
+        register.enterValueOnTextBoxOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_TEXTBOX, "Email","thombt1212@gmail.com");
         register.enterValueOnTextBoxOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_TEXTBOX, "Company","VMO JAPAN");
         register.enterValueOnTextBoxOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_TEXTBOX, "Password","Abc@1234");
         register.enterValueOnTextBoxOfRegisterPage(driver, RegisterPageUI.LOCATOR_DYNAMIC_TEXTBOX, "ConfirmPassword","Abc@1234");

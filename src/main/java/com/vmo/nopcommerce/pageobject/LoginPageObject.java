@@ -15,16 +15,16 @@ public class LoginPageObject extends BasePage {
 
     public void clickOnButton(WebDriver driver,String locator) {
         clickToElement(driver, locator);
-        Log.allure("Click on element success");
     }
 
     public void enterValueOnTextbox(WebDriver driver,String locator, String value) {
         sendKeyToElement(driver, locator, value);
-        Log.allure("Send key on text box is success");
+        Log.allure("Send key to textbox value: %s",value);
     }
 
     public String getNofifySuccess(WebDriver driver,String locator) {
         waitForElementVisible(driver, locator);
+        Log.allure("Send new pass to email success");
         return getTextElement(driver, locator);
     }
 

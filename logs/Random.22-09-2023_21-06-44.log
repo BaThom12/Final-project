@@ -1,0 +1,52 @@
+[22-09-2023 21:06:46.814 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[22-09-2023 21:06:48.215 INFO com.vmo.nopcommerce.helper.Log] - Open Home of Nopcommer
+[22-09-2023 21:06:48.332 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[22-09-2023 21:06:48.456 INFO com.vmo.nopcommerce.helper.Log] - Sendkey on Search textbox is succeed
+[22-09-2023 21:06:49.711 INFO com.vmo.nopcommerce.helper.Log] - Click on search button is succeed
+[22-09-2023 21:06:49.783 INFO com.vmo.nopcommerce.helper.Log] - Perform search has result success
+[22-09-2023 21:06:49.800 INFO com.vmo.nopcommerce.helper.Log] - Verify product's name contains keyword is succeed
+[22-09-2023 21:06:50.406 INFO com.vmo.nopcommerce.helper.Log] - Perform search no result success
+[22-09-2023 21:06:50.406 INFO com.vmo.nopcommerce.helper.Log] - Verify message(No products were found that matched your criteria.) is displayed
+[22-09-2023 21:06:50.854 INFO com.vmo.nopcommerce.helper.Log] - Verify that clean browser and driver are succeed
+[22-09-2023 21:06:52.138 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[22-09-2023 21:06:53.574 INFO com.vmo.nopcommerce.helper.Log] - Open Home of Nopcommer
+[22-09-2023 21:06:53.590 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[22-09-2023 21:06:55.492 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the software page is succeed
+[22-09-2023 21:06:59.076 INFO com.vmo.nopcommerce.helper.Log] - Sort in descending success
+[22-09-2023 21:06:59.077 INFO com.vmo.nopcommerce.helper.Log] - Verify the sort option appear on the screen is succeed
+[22-09-2023 21:06:59.077 INFO com.vmo.nopcommerce.helper.Log] - Verify the sort function works correctly
+[22-09-2023 21:06:59.510 INFO com.vmo.nopcommerce.helper.Log] - Verify that clean browser and driver are succeed
+[22-09-2023 21:07:00.728 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[22-09-2023 21:07:02.301 INFO com.vmo.nopcommerce.helper.Log] - Open Home of Nopcommer
+[22-09-2023 21:07:02.315 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[22-09-2023 21:07:02.375 INFO com.vmo.nopcommerce.helper.Log] - Title of news New online store is open!
+[22-09-2023 21:07:03.638 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the article chosen is succeed
+[22-09-2023 21:07:04.744 INFO com.vmo.nopcommerce.helper.Log] - Verify the message (News comment is successfully added.) is displayed
+[22-09-2023 21:07:04.969 INFO com.vmo.nopcommerce.helper.Log] - Add in comment success
+[22-09-2023 21:07:04.969 INFO com.vmo.nopcommerce.helper.Log] - Verify the new comment has added
+[22-09-2023 21:07:05.450 INFO com.vmo.nopcommerce.helper.Log] - Verify that clean browser and driver are succeed
+[22-09-2023 21:07:06.711 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[22-09-2023 21:07:08.055 INFO com.vmo.nopcommerce.helper.Log] - Open Home of Nopcommer
+[22-09-2023 21:07:08.064 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[22-09-2023 21:07:09.024 INFO com.vmo.nopcommerce.helper.Log] - Verify that the label of the chosen currency is displayed on screen
+[22-09-2023 21:07:09.128 INFO com.vmo.nopcommerce.helper.Log] - Exchange is display on screen
+[22-09-2023 21:07:09.129 INFO com.vmo.nopcommerce.helper.Log] - Verify the prices start with the symbol of the currency is displayed on screen
+[22-09-2023 21:07:09.686 INFO com.vmo.nopcommerce.helper.Log] - Verify that clean browser and driver are succeed
+[22-09-2023 21:07:10.914 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[22-09-2023 21:07:12.488 INFO com.vmo.nopcommerce.helper.Log] - Open Home of Nopcommer
+[22-09-2023 21:07:12.504 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[22-09-2023 21:07:14.631 INFO com.vmo.nopcommerce.helper.Log] - Open social success
+[22-09-2023 21:07:14.632 INFO com.vmo.nopcommerce.helper.Log] - Verify that the new tab shows correctly with the title of the chosen social media
+[22-09-2023 21:07:15.116 INFO com.vmo.nopcommerce.helper.Log] - Verify that clean browser and driver are succeed
+[22-09-2023 21:07:17.656 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[22-09-2023 21:07:18.687 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the registation page is succeed
+[22-09-2023 21:08:20.643 INFO com.vmo.nopcommerce.helper.Log] - Verify clear browser and driver are succeed
+[22-09-2023 21:08:21.929 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[22-09-2023 21:08:23.435 INFO com.vmo.nopcommerce.helper.Log] - Open Home of Nopcommer
+[22-09-2023 21:08:23.448 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the home page is succeed
+[22-09-2023 21:08:24.012 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the login page is succeed
+[22-09-2023 21:08:24.551 INFO com.vmo.nopcommerce.helper.Log] - Verify that you are on the password recovery page is succeed
+[22-09-2023 21:08:25.292 INFO com.vmo.nopcommerce.helper.Log] - Verify the message(Email with instructions has been sent to you.) is displayed
+[22-09-2023 21:08:26.248 INFO com.vmo.nopcommerce.helper.Log] - Open gmail is success
+[22-09-2023 21:08:26.919 INFO com.vmo.nopcommerce.helper.Log] - Log in gmail successful
+[22-09-2023 21:08:27.466 INFO com.vmo.nopcommerce.helper.Log] - Clear Browser and driver

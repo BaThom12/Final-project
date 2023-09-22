@@ -23,12 +23,12 @@ public class HomePageObject extends BasePage {
 
     public void clickToElementOnHomePage(WebDriver driver, String locator) {
         clickToElement(driver, locator);
-        Log.allure("Click on element success");
+        Log.allure("Click on button successful");
     }
 
     public void sendKeyToElementOnHomePage(WebDriver driver, String locator, String value) {
         sendKeyToElement(driver, locator, value);
-        Log.allure("Send key to element success",value);
+        Log.allure("Send key to text box has value: %s",value);
     }
 
     public String performSearchHasResult(WebDriver driver, String locator, String keySearch) {
@@ -45,13 +45,13 @@ public class HomePageObject extends BasePage {
         } else {
             result = "Opp! Wrong result";
         }
-        Log.allure("Perform search success",keySearch);
+        Log.allure("Perform search has result success",keySearch);
         return result;
     }
 
     public String performSearchNoResult(WebDriver driver, String locator) {
         String result = getTextElement(driver, locator);
-        Log.allure("Perform search success");
+        Log.allure("Perform search no result success");
         return result;
     }
 
@@ -98,7 +98,7 @@ public class HomePageObject extends BasePage {
 
     public void selectExchange(WebDriver driver, String locatorSelect, String option) {
         selectItemInDefaultDropdownByText(driver,locatorSelect,option);
-        Log.allure("Select option in select success",option);
+        Log.allure("Select option: %s",option);
     }
     public String getOptionOfSelect(WebDriver driver,String locator){
         return getSelectedItemInDefaultDropdown(driver, locator);
@@ -155,6 +155,7 @@ public class HomePageObject extends BasePage {
     }
 
     public String getUrlHomePage(WebDriver driver) {
+        Log.allure("Verify on Home successful");
         return getCurrentUrl(driver);
     }
 

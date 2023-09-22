@@ -14,20 +14,21 @@ public class RegisterPageObject extends BasePage {
 
     public void clickToElementOfRegisterPage(WebDriver driver,String locator) {
         clickToElement(driver, locator);
-        Log.allure("Click on element success");
+        Log.allure("Click on button successful");
     }
 
     public void enterValueOnTextBoxOfRegisterPage(WebDriver driver,String locator,String textDynamic,String value) {
         sendKeyToElement(driver, getDynamiLocator(locator,textDynamic), value);
-        Log.allure("Send key to textbox success");
+        Log.allure("Send key to text box value: %s",value);
     }
     public void chooseValueOfSelectOfRegisterPage(WebDriver driver,String locator,String textDynamic,String value) {
         selectItemInDefaultDropdownByText(driver,getDynamiLocator(locator,textDynamic),value);
-        Log.allure("Choose value on select is success");
+        Log.allure("Select option: %s",value);
     }
 
     public String getTextOfNofify(WebDriver driver,String locator) {
-        return getTextElement(driver, locator) ;
+        Log.allure("Register successful");
+        return getTextElement(driver, locator);
     }
 
 }

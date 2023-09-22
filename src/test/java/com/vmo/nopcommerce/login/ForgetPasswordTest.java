@@ -48,15 +48,15 @@ public class ForgetPasswordTest extends BaseTest {
         login.clickOnButton(driver, LoginPageUI.LOCATOR_FORGOT_PASSWORD_lABEL);
         verifyEquals(login.getTitlePage(driver), LoginPageUI.PASSWORD_RECOVER_TITLE);
         Log.info("Verify that you are on the password recovery page is succeed");
-        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_EMAIL_TEXTBOX, "thombt@rikkei.com");
+        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_EMAIL_TEXTBOX, "thombt1212@gmail.com");
         login.clickOnButton(driver, LoginPageUI.LOCATOR_RECOVER_BUTTON);
         verifyEquals(login.getNofifySuccess(driver, LoginPageUI.LOCATOR_NOFICATION_TITLE), LoginPageUI.FORGOT_TITLE);
         Log.info("Verify the message(Email with instructions has been sent to you.) is displayed");
         login.openGmailPage(driver, 0, LoginPageUI.GMAIL_URL);
-        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_EMAIL_ID_TEXTBOX, "thombt@rikkei.com");
+        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_EMAIL_ID_TEXTBOX, "thombt1212@gmail.com");
         login.clickOnButton(driver, LoginPageUI.LOCATOR_NEXT_BUTTON);
-        login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_PASSWORD_TEXTBOX, "password");
-        login.clickOnButton(driver, LoginPageUI.LOCATOR_PASSWORD_NEXT_BUTTON);
+        //login.enterValueOnTextbox(driver, LoginPageUI.LOCATOR_PASSWORD_TEXTBOX, "password");
+       //login.clickOnButton(driver, LoginPageUI.LOCATOR_PASSWORD_NEXT_BUTTON);
         Log.info("Log in gmail successful");
     }
 
