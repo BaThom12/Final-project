@@ -1,6 +1,7 @@
 package com.vmo.nopcommerce.helper;
 
 import com.vmo.nopcommerce.common.BaseTest;
+import com.vmo.nopcommerce.utils.excelutils.ExcelUtil;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -24,6 +25,7 @@ public class TestNGListener implements ITestListener {
         Object testClass = result.getInstance();
         WebDriver webDriver = ((BaseTest) testClass).getDriver();
         saveScreenShot(webDriver);
+        ExcelUtil.setCellData("PASSED",ExcelUtil.rowNumber,ExcelUtil.columnNumber);
     }
 
     @Override
@@ -33,12 +35,14 @@ public class TestNGListener implements ITestListener {
         Object testClass = result.getInstance();
         WebDriver webDriver = ((BaseTest) testClass).getDriver();
         saveScreenShot(webDriver);
+        ExcelUtil.setCellData("FAILED",ExcelUtil.rowNumber,ExcelUtil.columnNumber);
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         ITestListener.super.onTestSkipped(result);
         System.out.println("--onTestSkipped");
+        ExcelUtil.setCellData("SKIPPED",ExcelUtil.rowNumber,ExcelUtil.columnNumber);
     }
 
     @Override

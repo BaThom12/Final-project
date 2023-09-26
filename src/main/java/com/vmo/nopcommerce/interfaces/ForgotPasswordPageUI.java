@@ -1,6 +1,6 @@
 package com.vmo.nopcommerce.interfaces;
 
-public class LoginPageUI {
+public class ForgotPasswordPageUI {
     public static final String LOCATOR_FORGOT_PASSWORD_lABEL = "//span[@class='forgot-password']//a";
     public static final String LOCATOR_EMAIL_TEXTBOX = "//input[@id='Email']";
     public static final String LOCATOR_RECOVER_BUTTON = "//button[@name='send-email']";

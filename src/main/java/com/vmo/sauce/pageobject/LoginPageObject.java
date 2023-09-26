@@ -1,40 +1,32 @@
-package com.vmo.nopcommerce.pageobject;
+package com.vmo.sauce.pageobject;
 
 import com.vmo.nopcommerce.common.BasePage;
 import com.vmo.nopcommerce.helper.Log;
+import com.vmo.nopcommerce.utils.excelutils.ExcelUtil;
 import org.openqa.selenium.WebDriver;
-
-import java.awt.*;
 
 public class LoginPageObject extends BasePage {
     WebDriver driver;
-
     public LoginPageObject(WebDriver driver) {
         this.driver = driver;
     }
 
     public void clickOnButton(WebDriver driver,String locator) {
         clickToElement(driver, locator);
+        Log.allure("Click on login button");
     }
 
     public void enterValueOnTextbox(WebDriver driver,String locator, String value) {
         sendKeyToElement(driver, locator, value);
         Log.allure("Send key to textbox value: %s",value);
     }
-
-    public String getNofifySuccess(WebDriver driver,String locator) {
-        waitForElementVisible(driver, locator);
-        Log.allure("Send new pass to email success");
-        return getTextElement(driver, locator);
+    public String getUrl(WebDriver driver){
+        return getCurrentUrl(driver);
     }
 
-    public void openGmailPage(WebDriver driver, int index,String url) throws AWTException{
-        openNewTabByRobot(driver,index);
-        driver.get(url);
-        Log.allure("Open gmail is success");
-    }
-    public String getTitlePage(WebDriver driver){
-        return getTitle(driver);
-    }
+    public void fillTestResult(int row, int column) {
+        ExcelUtil.rowNumber = row;
+        ExcelUtil.columnNumber = column;
 
+    }
 }

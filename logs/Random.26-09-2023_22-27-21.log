@@ -1,0 +1,4 @@
+[26-09-2023 22:27:23.781 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[26-09-2023 22:27:25.457 INFO com.vmo.nopcommerce.helper.Log] - Open Login page
+[26-09-2023 22:27:25.463 INFO com.vmo.nopcommerce.helper.Log] - Path excel: null
+[26-09-2023 22:27:25.496 INFO com.vmo.nopcommerce.helper.Log] - currentDir: C:\selenium\Training\vmo-fresher-selenium-hybrid

@@ -1,0 +1,5 @@
+[26-09-2023 22:31:06.574 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[26-09-2023 22:31:07.748 INFO com.vmo.nopcommerce.helper.Log] - Open Login page
+[26-09-2023 22:31:07.753 INFO com.vmo.nopcommerce.helper.Log] - Platform.getCurrent().toString(): Windows 11
+[26-09-2023 22:31:07.783 INFO com.vmo.nopcommerce.helper.Log] - Path excel: null
+[26-09-2023 22:31:07.783 INFO com.vmo.nopcommerce.helper.Log] - currentDir: C:\selenium\Training\vmo-fresher-selenium-hybrid
