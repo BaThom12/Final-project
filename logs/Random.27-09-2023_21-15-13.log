@@ -1,0 +1,282 @@
+[27-09-2023 21:15:16.110 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[27-09-2023 21:15:16.940 INFO com.vmo.nopcommerce.helper.Log] - Open Login page
+[27-09-2023 21:15:16.946 INFO com.vmo.nopcommerce.helper.Log] - Platform.getCurrent().toString(): Windows 11
+[27-09-2023 21:15:16.972 INFO com.vmo.nopcommerce.helper.Log] - Path excel: C:\selenium\Training\vmo-fresher-selenium-hybrid\src\main\resources\
+[27-09-2023 21:15:16.973 INFO com.vmo.nopcommerce.helper.Log] - currentDir: C:\selenium\Training\vmo-fresher-selenium-hybrid
+[27-09-2023 21:15:17.935 INFO com.vmo.nopcommerce.helper.Log] - File name: data
+[27-09-2023 21:15:18.165 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: standard_user
+[27-09-2023 21:15:18.290 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: secret_sauce
+[27-09-2023 21:15:18.390 INFO com.vmo.nopcommerce.helper.Log] - Click on login button
+[27-09-2023 21:15:18.408 INFO com.vmo.nopcommerce.helper.Log] - url: https://www.saucedemo.com/inventory.html
+[27-09-2023 21:15:18.408 INFO com.vmo.nopcommerce.helper.Log] - text url: https://www.saucedemo.com/inventory.html
+[27-09-2023 21:15:18.556 INFO com.vmo.nopcommerce.helper.Log] - Row: <xml-fragment r="2" spans="1:28" x14ac:dyDescent="0.25" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A2" s="1">
+    <main:v>1</main:v>
+  </main:c>
+  <main:c r="B2" s="2" t="s">
+    <main:v>5</main:v>
+  </main:c>
+  <main:c r="C2" s="1" t="s">
+    <main:v>3</main:v>
+  </main:c>
+  <main:c r="D2" s="1" t="s">
+    <main:v>12</main:v>
+  </main:c>
+  <main:c r="E2" s="1"/>
+  <main:c r="F2" s="1"/>
+  <main:c r="G2" s="2"/>
+  <main:c r="H2" s="2"/>
+  <main:c r="I2" s="2"/>
+  <main:c r="J2" s="2"/>
+  <main:c r="K2" s="2"/>
+  <main:c r="L2" s="2"/>
+  <main:c r="M2" s="2"/>
+  <main:c r="N2" s="2"/>
+  <main:c r="O2" s="2"/>
+  <main:c r="P2" s="2"/>
+  <main:c r="Q2" s="2"/>
+  <main:c r="R2" s="2"/>
+  <main:c r="S2" s="2"/>
+  <main:c r="T2" s="2"/>
+  <main:c r="U2" s="2"/>
+  <main:c r="V2" s="2"/>
+  <main:c r="W2" s="2"/>
+  <main:c r="X2" s="2"/>
+  <main:c r="Y2" s="2"/>
+  <main:c r="Z2" s="2"/>
+  <main:c r="AA2" s="2"/>
+  <main:c r="AB2" s="2"/>
+</xml-fragment>
+[27-09-2023 21:15:18.557 INFO com.vmo.nopcommerce.helper.Log] - Row: 
+[27-09-2023 21:15:20.113 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[27-09-2023 21:15:20.983 INFO com.vmo.nopcommerce.helper.Log] - Open Login page
+[27-09-2023 21:15:20.983 INFO com.vmo.nopcommerce.helper.Log] - Platform.getCurrent().toString(): Windows 11
+[27-09-2023 21:15:20.984 INFO com.vmo.nopcommerce.helper.Log] - Path excel: C:\selenium\Training\vmo-fresher-selenium-hybrid\src\main\resources\
+[27-09-2023 21:15:20.985 INFO com.vmo.nopcommerce.helper.Log] - currentDir: C:\selenium\Training\vmo-fresher-selenium-hybrid
+[27-09-2023 21:15:21.147 INFO com.vmo.nopcommerce.helper.Log] - File name: data
+[27-09-2023 21:15:21.279 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: 
+[27-09-2023 21:15:21.373 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: 
+[27-09-2023 21:15:21.434 INFO com.vmo.nopcommerce.helper.Log] - Click on login button
+[27-09-2023 21:15:21.629 INFO com.vmo.nopcommerce.helper.Log] - Row: <xml-fragment r="5" spans="1:28" x14ac:dyDescent="0.25" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A5" s="1">
+    <main:v>4</main:v>
+  </main:c>
+  <main:c r="B5" s="2" t="s">
+    <main:v>8</main:v>
+  </main:c>
+  <main:c r="C5" s="1"/>
+  <main:c r="D5" s="1"/>
+  <main:c r="E5" s="1"/>
+  <main:c r="F5" s="1"/>
+  <main:c r="G5" s="2"/>
+  <main:c r="H5" s="2"/>
+  <main:c r="I5" s="2"/>
+  <main:c r="J5" s="2"/>
+  <main:c r="K5" s="2"/>
+  <main:c r="L5" s="2"/>
+  <main:c r="M5" s="2"/>
+  <main:c r="N5" s="2"/>
+  <main:c r="O5" s="2"/>
+  <main:c r="P5" s="2"/>
+  <main:c r="Q5" s="2"/>
+  <main:c r="R5" s="2"/>
+  <main:c r="S5" s="2"/>
+  <main:c r="T5" s="2"/>
+  <main:c r="U5" s="2"/>
+  <main:c r="V5" s="2"/>
+  <main:c r="W5" s="2"/>
+  <main:c r="X5" s="2"/>
+  <main:c r="Y5" s="2"/>
+  <main:c r="Z5" s="2"/>
+  <main:c r="AA5" s="2"/>
+  <main:c r="AB5" s="2"/>
+</xml-fragment>
+[27-09-2023 21:15:21.631 INFO com.vmo.nopcommerce.helper.Log] - Row: 
+[27-09-2023 21:15:23.054 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[27-09-2023 21:15:24.055 INFO com.vmo.nopcommerce.helper.Log] - Open Login page
+[27-09-2023 21:15:24.055 INFO com.vmo.nopcommerce.helper.Log] - Platform.getCurrent().toString(): Windows 11
+[27-09-2023 21:15:24.055 INFO com.vmo.nopcommerce.helper.Log] - Path excel: C:\selenium\Training\vmo-fresher-selenium-hybrid\src\main\resources\
+[27-09-2023 21:15:24.056 INFO com.vmo.nopcommerce.helper.Log] - currentDir: C:\selenium\Training\vmo-fresher-selenium-hybrid
+[27-09-2023 21:15:24.160 INFO com.vmo.nopcommerce.helper.Log] - File name: data
+[27-09-2023 21:15:24.285 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: 
+[27-09-2023 21:15:24.387 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: secret_sauce
+[27-09-2023 21:15:24.468 INFO com.vmo.nopcommerce.helper.Log] - Click on login button
+[27-09-2023 21:15:24.573 INFO com.vmo.nopcommerce.helper.Log] - Row: <xml-fragment r="3" spans="1:28" x14ac:dyDescent="0.25" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A3" s="1">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="B3" s="2" t="s">
+    <main:v>9</main:v>
+  </main:c>
+  <main:c r="C3" s="1"/>
+  <main:c r="D3" s="1" t="s">
+    <main:v>12</main:v>
+  </main:c>
+  <main:c r="E3" s="1"/>
+  <main:c r="F3" s="1"/>
+  <main:c r="G3" s="2"/>
+  <main:c r="H3" s="2"/>
+  <main:c r="I3" s="2"/>
+  <main:c r="J3" s="2"/>
+  <main:c r="K3" s="2"/>
+  <main:c r="L3" s="2"/>
+  <main:c r="M3" s="2"/>
+  <main:c r="N3" s="2"/>
+  <main:c r="O3" s="2"/>
+  <main:c r="P3" s="2"/>
+  <main:c r="Q3" s="2"/>
+  <main:c r="R3" s="2"/>
+  <main:c r="S3" s="2"/>
+  <main:c r="T3" s="2"/>
+  <main:c r="U3" s="2"/>
+  <main:c r="V3" s="2"/>
+  <main:c r="W3" s="2"/>
+  <main:c r="X3" s="2"/>
+  <main:c r="Y3" s="2"/>
+  <main:c r="Z3" s="2"/>
+  <main:c r="AA3" s="2"/>
+  <main:c r="AB3" s="2"/>
+</xml-fragment>
+[27-09-2023 21:15:24.574 INFO com.vmo.nopcommerce.helper.Log] - Row: 
+[27-09-2023 21:15:26.009 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[27-09-2023 21:15:26.873 INFO com.vmo.nopcommerce.helper.Log] - Open Login page
+[27-09-2023 21:15:26.873 INFO com.vmo.nopcommerce.helper.Log] - Platform.getCurrent().toString(): Windows 11
+[27-09-2023 21:15:26.874 INFO com.vmo.nopcommerce.helper.Log] - Path excel: C:\selenium\Training\vmo-fresher-selenium-hybrid\src\main\resources\
+[27-09-2023 21:15:26.876 INFO com.vmo.nopcommerce.helper.Log] - currentDir: C:\selenium\Training\vmo-fresher-selenium-hybrid
+[27-09-2023 21:15:26.971 INFO com.vmo.nopcommerce.helper.Log] - File name: data
+[27-09-2023 21:15:27.155 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: 123456.0
+[27-09-2023 21:15:27.257 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: secret_sauce
+[27-09-2023 21:15:27.362 INFO com.vmo.nopcommerce.helper.Log] - Click on login button
+[27-09-2023 21:15:27.538 INFO com.vmo.nopcommerce.helper.Log] - Row: <xml-fragment r="7" spans="1:28" x14ac:dyDescent="0.25" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A7" s="1">
+    <main:v>6</main:v>
+  </main:c>
+  <main:c r="B7" s="2" t="s">
+    <main:v>6</main:v>
+  </main:c>
+  <main:c r="C7" s="1">
+    <main:v>123456</main:v>
+  </main:c>
+  <main:c r="D7" s="1" t="s">
+    <main:v>12</main:v>
+  </main:c>
+  <main:c r="E7" s="1"/>
+  <main:c r="F7" s="1"/>
+  <main:c r="G7" s="2"/>
+  <main:c r="H7" s="2"/>
+  <main:c r="I7" s="2"/>
+  <main:c r="J7" s="2"/>
+  <main:c r="K7" s="2"/>
+  <main:c r="L7" s="2"/>
+  <main:c r="M7" s="2"/>
+  <main:c r="N7" s="2"/>
+  <main:c r="O7" s="2"/>
+  <main:c r="P7" s="2"/>
+  <main:c r="Q7" s="2"/>
+  <main:c r="R7" s="2"/>
+  <main:c r="S7" s="2"/>
+  <main:c r="T7" s="2"/>
+  <main:c r="U7" s="2"/>
+  <main:c r="V7" s="2"/>
+  <main:c r="W7" s="2"/>
+  <main:c r="X7" s="2"/>
+  <main:c r="Y7" s="2"/>
+  <main:c r="Z7" s="2"/>
+  <main:c r="AA7" s="2"/>
+  <main:c r="AB7" s="2"/>
+</xml-fragment>
+[27-09-2023 21:15:27.539 INFO com.vmo.nopcommerce.helper.Log] - Row: 
+[27-09-2023 21:15:28.996 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[27-09-2023 21:15:30.784 INFO com.vmo.nopcommerce.helper.Log] - Open Login page
+[27-09-2023 21:15:30.785 INFO com.vmo.nopcommerce.helper.Log] - Platform.getCurrent().toString(): Windows 11
+[27-09-2023 21:15:30.785 INFO com.vmo.nopcommerce.helper.Log] - Path excel: C:\selenium\Training\vmo-fresher-selenium-hybrid\src\main\resources\
+[27-09-2023 21:15:30.786 INFO com.vmo.nopcommerce.helper.Log] - currentDir: C:\selenium\Training\vmo-fresher-selenium-hybrid
+[27-09-2023 21:15:30.882 INFO com.vmo.nopcommerce.helper.Log] - File name: data
+[27-09-2023 21:15:31.031 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: standard_user
+[27-09-2023 21:15:31.132 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: 
+[27-09-2023 21:15:31.205 INFO com.vmo.nopcommerce.helper.Log] - Click on login button
+[27-09-2023 21:15:31.393 INFO com.vmo.nopcommerce.helper.Log] - Row: <xml-fragment r="4" spans="1:28" x14ac:dyDescent="0.25" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A4" s="1">
+    <main:v>3</main:v>
+  </main:c>
+  <main:c r="B4" s="2" t="s">
+    <main:v>10</main:v>
+  </main:c>
+  <main:c r="C4" s="1" t="s">
+    <main:v>3</main:v>
+  </main:c>
+  <main:c r="D4" s="1"/>
+  <main:c r="E4" s="1"/>
+  <main:c r="F4" s="1"/>
+  <main:c r="G4" s="2"/>
+  <main:c r="H4" s="2"/>
+  <main:c r="I4" s="2"/>
+  <main:c r="J4" s="2"/>
+  <main:c r="K4" s="2"/>
+  <main:c r="L4" s="2"/>
+  <main:c r="M4" s="2"/>
+  <main:c r="N4" s="2"/>
+  <main:c r="O4" s="2"/>
+  <main:c r="P4" s="2"/>
+  <main:c r="Q4" s="2"/>
+  <main:c r="R4" s="2"/>
+  <main:c r="S4" s="2"/>
+  <main:c r="T4" s="2"/>
+  <main:c r="U4" s="2"/>
+  <main:c r="V4" s="2"/>
+  <main:c r="W4" s="2"/>
+  <main:c r="X4" s="2"/>
+  <main:c r="Y4" s="2"/>
+  <main:c r="Z4" s="2"/>
+  <main:c r="AA4" s="2"/>
+  <main:c r="AB4" s="2"/>
+</xml-fragment>
+[27-09-2023 21:15:31.394 INFO com.vmo.nopcommerce.helper.Log] - Row: 
+[27-09-2023 21:15:32.771 INFO com.vmo.nopcommerce.helper.Log] - Open browser
+[27-09-2023 21:15:33.658 INFO com.vmo.nopcommerce.helper.Log] - Open Login page
+[27-09-2023 21:15:33.658 INFO com.vmo.nopcommerce.helper.Log] - Platform.getCurrent().toString(): Windows 11
+[27-09-2023 21:15:33.659 INFO com.vmo.nopcommerce.helper.Log] - Path excel: C:\selenium\Training\vmo-fresher-selenium-hybrid\src\main\resources\
+[27-09-2023 21:15:33.659 INFO com.vmo.nopcommerce.helper.Log] - currentDir: C:\selenium\Training\vmo-fresher-selenium-hybrid
+[27-09-2023 21:15:33.744 INFO com.vmo.nopcommerce.helper.Log] - File name: data
+[27-09-2023 21:15:33.883 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: standard_user
+[27-09-2023 21:15:33.977 INFO com.vmo.nopcommerce.helper.Log] - Send key to textbox value: 123456.0
+[27-09-2023 21:15:34.052 INFO com.vmo.nopcommerce.helper.Log] - Click on login button
+[27-09-2023 21:15:34.166 INFO com.vmo.nopcommerce.helper.Log] - Row: <xml-fragment r="6" spans="1:28" x14ac:dyDescent="0.25" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A6" s="1">
+    <main:v>5</main:v>
+  </main:c>
+  <main:c r="B6" s="2" t="s">
+    <main:v>7</main:v>
+  </main:c>
+  <main:c r="C6" s="1" t="s">
+    <main:v>3</main:v>
+  </main:c>
+  <main:c r="D6" s="1">
+    <main:v>123456</main:v>
+  </main:c>
+  <main:c r="E6" s="1"/>
+  <main:c r="F6" s="1"/>
+  <main:c r="G6" s="2"/>
+  <main:c r="H6" s="2"/>
+  <main:c r="I6" s="2"/>
+  <main:c r="J6" s="2"/>
+  <main:c r="K6" s="2"/>
+  <main:c r="L6" s="2"/>
+  <main:c r="M6" s="2"/>
+  <main:c r="N6" s="2"/>
+  <main:c r="O6" s="2"/>
+  <main:c r="P6" s="2"/>
+  <main:c r="Q6" s="2"/>
+  <main:c r="R6" s="2"/>
+  <main:c r="S6" s="2"/>
+  <main:c r="T6" s="2"/>
+  <main:c r="U6" s="2"/>
+  <main:c r="V6" s="2"/>
+  <main:c r="W6" s="2"/>
+  <main:c r="X6" s="2"/>
+  <main:c r="Y6" s="2"/>
+  <main:c r="Z6" s="2"/>
+  <main:c r="AA6" s="2"/>
+  <main:c r="AB6" s="2"/>
+</xml-fragment>
+[27-09-2023 21:15:34.166 INFO com.vmo.nopcommerce.helper.Log] - Row: 

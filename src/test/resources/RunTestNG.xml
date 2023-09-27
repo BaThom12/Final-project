@@ -9,7 +9,12 @@
            <!-- <class name="com.vmo.nopcommerce.product.ProductSearchSortTest"></class>
             <class name="com.vmo.nopcommerce.register.RegisterSuccessfullyTest"></class>
             <class name="com.vmo.nopcommerce.login.ForgetPasswordTest"></class>-->
+        </classes>
+    </test>
+    <test name="Sauce">
+        <classes>
             <class name="com.vmo.sauce.login.LoginSuccessful"></class>
+            <class name="com.vmo.sauce.login.LoginUnSuccessful"></class>
         </classes>
     </test>
 </suite><!-- Test -->

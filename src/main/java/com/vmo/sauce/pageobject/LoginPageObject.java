@@ -23,6 +23,9 @@ public class LoginPageObject extends BasePage {
     public String getUrl(WebDriver driver){
         return getCurrentUrl(driver);
     }
+    public String getErrorMessage(WebDriver driver, String locator){
+        return getTextElement(driver,locator);
+    }
 
     public void fillTestResult(int row, int column) {
         ExcelUtil.rowNumber = row;
