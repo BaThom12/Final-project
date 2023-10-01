@@ -1,5 +1,6 @@
 package com.vmo.nopcommerce.common;
 
+import com.vmo.nopcommerce.factoryEnviroment.GridFactory;
 import com.vmo.nopcommerce.factoryEnviroment.LocalFactory;
 import com.vmo.nopcommerce.helper.Log;
 import com.vmo.nopcommerce.interfaces.HomePageUI;
@@ -80,8 +81,12 @@ public class BaseTest {
 
     }
 
-    protected WebDriver getDriverBrowser(String browser) {
-        driver = new LocalFactory().createDriver(browser);
+    protected WebDriver getDriverBrowser(String browser, String runType) {
+        if(runType=="grid"){
+            driver = new GridFactory().createDriver(browser);
+        }else{
+            driver = new LocalFactory().createDriver(browser);
+        }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
         return driver;

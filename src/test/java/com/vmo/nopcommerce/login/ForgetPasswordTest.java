@@ -23,10 +23,10 @@ public class ForgetPasswordTest extends BaseTest {
     private HomePageObject home;
     private ForgotPasswordPageObject forgot;
 
-    @Parameters("browser")
+    @Parameters({"browser","runType"})
     @BeforeMethod
-    public void setup(@Optional("CHROME") String browser) {
-        driver = getDriverBrowser(browser);
+    public void setup(String browser, String type) {
+        driver = getDriverBrowser(browser,type);
         driver.manage().window().maximize();
         Log.info("Open browser");
         driver.get(HomePageUI.HOME_URL);

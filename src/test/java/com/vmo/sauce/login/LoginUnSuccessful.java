@@ -21,10 +21,11 @@ public class LoginUnSuccessful extends BaseTest {
     private static WebDriver driver;
     private LoginPageObject login;
 
-    @Parameters("browser")
+    @Parameters({"browser","runType"})
     @BeforeMethod
-    public void setup(@Optional("CHROME") String browser) {
-        driver = getDriverBrowser(browser);
+    // public void setup(@Optional("CHROME") String browser) {
+    public void setup(String browser, String type) {
+        driver = getDriverBrowser(browser,type);
         driver.manage().window().maximize();
         Log.info("Open browser");
         driver.get(LoginPageUI.SAUCE_URL);
